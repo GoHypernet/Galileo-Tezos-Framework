@@ -1,0 +1,78 @@
+{
+    "galileo.logo": "https://cryptologos.cc/logos/tezos-xtz-logo.png?v=010",
+    "galileo.title": "Tezos",
+    "galileo.description": "Security focused. Upgradable. Built to last.",
+    "galileo.widget_label": "Tezos Node Portal",
+    "galileo.social_links": [
+        {
+        "icon": {
+            "prefix": "fab",
+            "name": "twitter"
+        },
+        "href": "https://twitter.com/tezos",
+        "priority": 0
+        },
+        {
+        "icon": {
+            "prefix": "fab",
+            "name": "gitlab"
+        },
+        "href": "https://gitlab.com/tezos/tezos",
+        "priority": 1
+        },
+		{
+        "icon": {
+            "prefix": "fab",
+            "name": "discord"
+        },
+        "href": "https://discord.com/invite/udZwhQn",
+        "priority": 2
+        }
+    ],
+    "galileo.ui_components": [
+        {
+        "type": "custom",
+        "title": "Getting Started",
+        "content": [
+            {
+            "title": "🏡 Tezos Home Page",
+            "href": "https://tezos.com/",
+            "priority": 0
+            },
+            {
+            "title": "🤓 Developer Resources",
+            "href": "https://tezos.com/developer-portal",
+            "priority": 2
+            },
+            {
+            "title": "📙 Documentation",
+            "href": "https://tezos.gitlab.io/",
+            "priority": 3
+            }
+        ]
+        },
+        {
+        "type": "custom",
+        "title": "Help",
+        "content": [
+            {
+            "title": "🤔 Tezos Stackexchange",
+            "href": "https://tezos.stackexchange.com/",
+            "priority": 0
+            }
+        ]
+        },
+		{
+        "type": "custom",
+        "title": "Your API Endpoints",
+        "content": [
+            {
+            "title": "☁ JSON RPC endpoint",
+            "href": "/jsonrpc/",
+            "priority": 0
+            }
+        ]
+        }
+    ],
+    "workbench.colorTheme": "Galileo Dark"
+}

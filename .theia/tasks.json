@@ -1,0 +1,81 @@
+{
+    "tasks": [
+        {
+            "id": "generate-node-identity",
+            "label": "Generate Node Identity",
+            "description": "Create identity for connecting to the Tezos network.",
+            "type": "shell",
+            "command": "tezos-node identity generate",
+            "icon": {
+                "prefix": "far",
+                "name": "id-card"
+            }
+        },
+        {
+            "id": "start-tezos-node",
+            "label": "Start Tezos Node",
+            "description": "Run a Tezos node connected to the public mainnet.",
+            "type": "shell",
+            "command": "tmux new -s node tezos-node run --rpc-addr 127.0.0.1 || tmux a -t node",
+            "icon": {
+                "prefix": "fas",
+                "name": "play-circle"
+            }
+        },
+        {
+            "id": "stop-tezos-node",
+            "label": "Stop Tezos Node",
+            "description": "End Tezos node process.",
+            "type": "shell",
+            "command": "tmux kill-session -t node",
+            "icon": {
+                "prefix": "fas",
+                "name": "stop-circle"
+            }
+        },
+        {
+            "id": "check-node-bootstrapped",
+            "label": "Check Tezos Node Status",
+            "description": "Test if your Tezos node is bootstrapped.",
+            "type": "shell",
+            "command": "tmux new -s bootstrap tezos-client bootstrapped || tmux a -t bootstrap",
+            "icon": {
+                "prefix": "fas",
+                "name": "thermometer"
+            }
+        },
+        {
+            "id": "generate-keys",
+            "label": "Generate Wallet Keys",
+            "description": "Generate keys for a wallet and store encrypted.",
+            "type": "shell",
+            "command": "tezos-client gen keys my-galileo && tezos-client list known addresses",
+            "icon": {
+                "prefix": "fas",
+                "name": "key"
+            }
+        },
+        {
+            "id": "start-baker",
+            "label": "Start Tezos Baker",
+            "description": "Start Baker process in tmux terminal.",
+            "type": "shell",
+            "command": "tmux new -s baker tezos-baker-alpha run with local node ~/.tezos-node my-galileo || tmux a -t baker",
+            "icon": {
+                "prefix": "fas",
+                "name": "bread-slice"
+            }
+        },
+		{
+            "id": "start-bash-terminal",
+            "label": "Bash Terminal",
+            "description": "Open a Bash terminal",
+            "type": "shell",
+            "command": "cd /home/tezos && /bin/bash",
+			"icon": {
+                "prefix": "fas",
+                "name": "terminal"
+            }
+        }
+    ]
+}
